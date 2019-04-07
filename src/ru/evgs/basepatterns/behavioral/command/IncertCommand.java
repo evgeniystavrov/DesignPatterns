@@ -1,14 +1,14 @@
 package ru.evgs.basepatterns.behavioral.command;
 
 public class IncertCommand implements Command {
-    Datebase datebase;
+    Database database;
 
-    public IncertCommand(Datebase datebase) {
-        this.datebase = datebase;
+    public IncertCommand(Database database) {
+        this.database = database;
     }
 
     @Override
     public void execute() {
-        datebase.incert();
+        database.incert();
     }
 }

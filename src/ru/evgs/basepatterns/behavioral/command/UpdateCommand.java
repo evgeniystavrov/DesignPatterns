@@ -1,14 +1,14 @@
 package ru.evgs.basepatterns.behavioral.command;
 
 public class UpdateCommand implements Command {
-    Datebase datebase;
+    Database database;
 
-    public UpdateCommand(Datebase datebase) {
-        this.datebase = datebase;
+    public UpdateCommand(Database database) {
+        this.database = database;
     }
 
     @Override
     public void execute() {
-        datebase.update();
+        database.update();
     }
 }

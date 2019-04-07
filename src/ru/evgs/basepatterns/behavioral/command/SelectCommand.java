@@ -1,14 +1,14 @@
 package ru.evgs.basepatterns.behavioral.command;
 
 public class SelectCommand implements Command {
-    Datebase datebase;
+    Database database;
 
-    public SelectCommand(Datebase datebase) {
-        this.datebase = datebase;
+    public SelectCommand(Database database) {
+        this.database = database;
     }
 
     @Override
     public void execute() {
-        datebase.select();
+        database.select();
     }
 }

@@ -2,13 +2,13 @@ package ru.evgs.basepatterns.behavioral.command;
 
 public class DatabaseRunner {
     public static void main(String[] args) {
-        Datebase datebase = new Datebase();
+        Database database = new Database();
 
         Developer developer = new Developer(
-                new IncertCommand(datebase),
-                new UpdateCommand(datebase),
-                new SelectCommand(datebase),
-                new DeleteCommand(datebase)
+                new IncertCommand(database),
+                new UpdateCommand(database),
+                new SelectCommand(database),
+                new DeleteCommand(database)
         );
 
         developer.incertRecord();

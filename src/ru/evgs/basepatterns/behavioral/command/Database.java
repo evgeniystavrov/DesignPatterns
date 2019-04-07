@@ -1,6 +1,6 @@
 package ru.evgs.basepatterns.behavioral.command;
 
-public class Datebase {
+public class Database {
     public void incert() {
         System.out.println("Incerting record...");
     }

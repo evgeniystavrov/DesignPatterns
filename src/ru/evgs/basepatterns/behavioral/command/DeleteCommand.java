@@ -1,14 +1,14 @@
 package ru.evgs.basepatterns.behavioral.command;
 
 public class DeleteCommand implements Command {
-    Datebase datebase;
+    Database database;
 
-    public DeleteCommand(Datebase datebase) {
-        this.datebase = datebase;
+    public DeleteCommand(Database database) {
+        this.database = database;
     }
 
     @Override
     public void execute() {
-        datebase.delete();
+        database.delete();
     }
 }
